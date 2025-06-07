@@ -1,0 +1,11 @@
+int A[10] = {3, 5, 1, 2, 7, 4, 8, 2, 3, 5}; 
+int f(int L, int R) { 
+  if (L == R) return A[L]; 
+  int mid = (L + R) / 2; 
+  return max(f(L, mid), f(mid + 1, R)); 
+} 
+ 
+int main() { 
+  cout << f(0, 9) << endl; 
+  return 0; 
+}
