@@ -1,0 +1,5 @@
+int f(int x, int y, int z) { 
+  if (x == 0) return z; 
+  if (x % 2 == 1) return f(x / 2, y * 2, z + y); 
+  return f(x / 2, y * 2, z); 
+} 
