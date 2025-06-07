@@ -1,0 +1,7 @@
+int f(int x) { 
+  int ret = 0; 
+  for (int i = 1; i <= x; i++) { 
+    if (x % i == 0) ret++; 
+  } 
+  return ret; 
+} 
