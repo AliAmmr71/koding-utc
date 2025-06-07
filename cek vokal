@@ -1,0 +1,17 @@
+int main() { 
+  string S = "untitledtrainingcamp"; 
+  string A = "aeiou"; 
+  int ans = 0; 
+  for (int i = 0; i < S.size(); i++) { 
+    bool cek = false; 
+    for (int j = 0; j < 5; j++) { 
+      if (S[i] == A[j]) { 
+        cek = true; 
+        break; 
+      } 
+    } 
+    if (cek) ans++; 
+  } 
+  cout << ans << endl; 
+  return 0; 
+}
