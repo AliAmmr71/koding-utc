@@ -1,0 +1,7 @@
+int f(int x, int y, int z) { 
+  if (y == 0) return 1; 
+  int temp = f(x, y / 2, z); 
+  temp = (temp * temp) % z; 
+  if (y % 2 == 0) return temp; 
+  return (temp * x) % z; 
+} 
